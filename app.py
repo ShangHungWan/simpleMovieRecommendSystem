@@ -69,7 +69,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html", movieNames=movies)
+    return render_template("index.html", movieNames=movieList)
 
 @app.route('/getSimliarMovie', methods=['GET', 'POST'])
 def getMovie():
@@ -85,4 +85,4 @@ def getMovie():
 
 if __name__ == '__main__':
     getMoviesList(movieList)
-    app.run(debug=True, host='0.0.0.0')
+    app.run()
