@@ -1,5 +1,7 @@
 # 基於 Collaborative Filtering 之 Web 電影推薦系統
 
+###### tags: `Discrete mathematics` `Collaborative Filtering` `python` `Recommender system` `pandas` 
+
 ## Collaborative Filtering 簡介
 Collaborative Filtering 是利用有相同興趣的群體為樣本，去推薦使用者可能感興趣的資訊。
 又分為 user-based、item-based 兩種，前者是以使用者資訊為基礎，先收集使用者A感興趣的資訊，再透過比較A與其他使用者的相似度，找到一些和他有相同興趣的使用者，把他們中出現頻率高但不在A興趣中的項目作為結果；後者是計算目前項目A跟其他項目的相似度，把與A相似度高的項目推薦給使用者。
@@ -9,6 +11,9 @@ Collaborative Filtering 是利用有相同興趣的群體為樣本，去推薦�
 
 ## 技術介紹
 使用上述的 Item-based 為基礎算法，當使用者選擇一部電影時，根據所有用戶的評分判斷所有電影與這部電影的相似度，並將相似度高且評分高於平均值的電影推薦給使用者。
+
+1. 使用flask套件架設伺服器
+2. 使用pandas進行資料儲存、過濾、分析、相似度計算等操作
 
 ## 如何安裝
 
